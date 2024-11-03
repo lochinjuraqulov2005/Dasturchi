@@ -1,0 +1,9 @@
+{% extends 'bosh.html' %}
+
+{% block content %}
+<h1>Postni tahrirlash</h1>
+<from action="" method="post">{% csrf_token %}
+     {{ from.as_p }}
+    <input type="submit" value="Yangilash">
+</from>
+{% endblock content %}

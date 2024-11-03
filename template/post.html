@@ -1,0 +1,9 @@
+{% extends 'bosh.html' %}
+{% block content %}
+<div class="post">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+    <a href="{% url 'post2.html' %}">Postni tahrirlash</a>
+</div>
+
+{% endblock content %}

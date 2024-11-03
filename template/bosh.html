@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Falco</title>
+    <link rel="stylesheet" href="{% static 'css/bosh.css' %}">
+</head>
+<body>
+<header>
+    <h1><a href="{% url 'base.html' %}">Falco Blog</a></h1><hr>
+</header>
+<div>
+
+    {% block content %}
+    {% endblock content %}
+</div>
+<footer>
+    <h2><a href="{% url 'post1.html' %}">Yangi post yozish</a></h2>
+</footer>
+</body>
+</html>
